@@ -27,13 +27,46 @@
   <div class="inner-container">
     <div class="content-wrapper">
 
-      <div class="content">
+      <div class="content blog">
         <h1><?php the_title(); ?></h1>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-        the_content();
-        endwhile; else: ?>
-        <p>Sorry, no posts matched your criteria.</p>
+        <div class="blog-post-wrapper">
+          <?php
+          // the query
+          $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
+
+          <?php if ( $wpb_all_query->have_posts() ) : ?>
+            <!-- the loop -->
+            <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+              <?php if ( has_post_thumbnail() ) : ?>
+              <div class="blog-item shadow">
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                <?php the_post_thumbnail(); ?>
+                </a>
+                <?php endif; ?>
+                <div class="post-details-wrapper">
+                  <p class="post-details" ><?php the_author(); ?> | <?php the_date(); ?></p>
+                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <p class="excerpt"> <?php the_excerpt(); ?> </p>
+                  <p><a class="read-more" href="<?php the_permalink(); ?>">Read More</a></p>
+                </div>
+              </div>
+            <?php endwhile; ?>
+            <!-- end of the loop -->
+
+
+        </div>
+
+
+
+
+
+        	<?php wp_reset_postdata(); ?>
+
+        <?php else : ?>
+        	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
+
+
       </div>
 
     </div>

@@ -7,7 +7,7 @@
       <h1>Are you experiencing pain or discomfort?</h1>
       <div class="buttons">
         <a href="/contact/">BOOK ONLINE</a>
-        <a href="<?php $url = site_url(); echo $url . "/blog.php";?>">OUR BLOG</a>
+        <a href="/blog/">OUR BLOG</a>
       </div>
     </div>
     <div class="mobile-banner-content shadow" >
