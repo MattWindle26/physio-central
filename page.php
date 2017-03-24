@@ -5,13 +5,9 @@
 <!-- JUMPS -->
 
 
-<div class="banner homepage ">
+<div class="banner homepage pages ">
   <div class="banner-content" >
-    <h1>Are you experiencing pain or discomfort?</h1>
-    <div class="buttons">
-      <span><a href="">BOOK ONLINE</a></span>
-      <span><a href="">TESTIMONIALS</a></span>
-    </div>
+    <h1><?php the_title(); ?></h1>
   </div>
   <div class="mobile-banner-content shadow" >
     <p>Universal Trade Centre. Unit 2104, 21/F, 3-5A Arbuthnot Road. Central</p>
@@ -28,15 +24,33 @@
 
 <main>
   <div class="inner-container">
-    <div class="content">
+    <div class="content-wrapper">
 
-      <h1><?php the_title(); ?></h1>
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-      the_content();
-      endwhile; else: ?>
-      <p>Sorry, no posts matched your criteria.</p>
-      <?php endif; ?>
+      <div class="content">
+        <h1><?php the_title(); ?></h1>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+        the_content();
+        endwhile; else: ?>
+        <p>Sorry, no posts matched your criteria.</p>
+        <?php endif; ?>
+      </div>
+      <div class="sidebar">
+        <img class="circle shadow" src="/assets/images/contact.jpg"  >
+        <h2>Services</h2>
+        <ul>
+          <li>Dry needling</li>
+          <li>Paediatric Physiotherapy</li>
+          <li>Podiatry</li>
+          <li>Active Isolated Stretching</li>
+          <li>Myotherapy</li>
+        </ul>
+        <h2>Book an Appointment</h2>
+        <a href="tel:+852 2801.4801" >+852 2801.4801</a><br>
+        <a href="mailto:info@physio-central.com" >info@physio-central.com</a>
+      </div>
+
     </div>
+
   </div>
 </main>
 

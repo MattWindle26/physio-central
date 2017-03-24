@@ -4,11 +4,7 @@
 <div class="banner homepage ">
   <div class="inner-container">
     <div class="banner-content" >
-      <h1>Are you experiencing pain or discomfort?</h1>
-      <div class="buttons">
-        <a href="/contact/">BOOK ONLINE</a>
-        <a href="/blog.php">OUR BLOG</a>
-      </div>
+      <h1>PhysioCentral | Blog</h1>
     </div>
     <div class="mobile-banner-content shadow" >
       <p>Universal Trade Centre. Unit 2104, 21/F, 3-5A Arbuthnot Road. Central</p>
@@ -17,11 +13,11 @@
 </div>
 <div class="action-banner">
   <h3>Take a look at our blog</h3>
-  <a href="/blog.php">Our Blog</a>
+  <a href="/blog/">Our Blog</a>
 </div>
 <div class="action-banner book-now">
   <h3>Book an Appointment</h3>
-  <a href="/contact/">Book Now!</a>
+  <a href="/blog/">Book Now!</a>
 </div>
 
 <!-- JUMPS -->

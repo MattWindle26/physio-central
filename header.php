@@ -23,7 +23,7 @@
         <div class="middle-header">
           <div class="header-details" >
             <div class="logo">
-              <img src="/assets/images/logo.png" alt="">
+              <a href="/index.php" ><img src="/assets/images/logo.png" alt=""></a>
             </div>
             <div class="header-contact-details">
               <h2><a href="tel:+852 2801.4801" >+852 2801.4801</h2>
@@ -39,13 +39,13 @@
         </div>
         <div class="bottom-header">
           <nav>
-            <a href="#">OUR STAFF</a>
-            <a href="#">PHYSIOTHERAPY</a>
-            <a href="#">SERVICES</a>
-            <a href="#">STOCK ITEMS</a>
-            <a href="#">COURSES</a>
-            <a href="#">INFORMATION</a>
-            <a href="#">CONTACT</a>
+            <a href="/meet-the-team/">OUR STAFF</a>
+            <a href="/what-is/">PHYSIOTHERAPY</a>
+            <a href="/services/">SERVICES</a>
+            <a href="/stock-items/">STOCK ITEMS</a>
+            <a href="/courses/">COURSES</a>
+            <a href="/information-library/">INFORMATION</a>
+            <a href="/contact/">CONTACT</a>
           </nav>
         </div>
     </div>

@@ -6,7 +6,7 @@
  function register_my_menus() {
    register_nav_menus(
      array(
-       'main-nav' => __( 'main-nav' ),
+       'header' => __( 'header' ),
        'footer' => __( 'footer' )
      )
    );

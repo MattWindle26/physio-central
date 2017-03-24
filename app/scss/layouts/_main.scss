@@ -6,17 +6,68 @@
   padding: 20px;
   text-align: left;
   &.homepage{
-    background-image: url(/assets/images/banner/homepage.jpg);
+    background-image: url(/assets/images/homepage-banner.jpg);
     background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 300px;
+    @media #{$mobile}{
+      background-image: url(/assets/images/homepage-banner.jpg);
+      background-position: center center;
+      background-size: cover;
+      min-height: 300px;
+      position: relative;
+      z-index: 1;
+      &::before{
+        position: absolute;
+      content:'';
+      height: 100%;
+      width: 100%;
+      background-color: rgba($black, 0.25);
+      z-index: -1;
+      }
+      @media #{$tablet}{
+        min-height: 550px;
+      }
+      &.pages{
+        min-height: 300px;
+      }
+    }
     .banner-content{
-      background-color: pink;
       display: none;
+      @media #{$tablet}{
+        display: block;
+        padding: 20px 20px 40px 20px;
+      }
+      h1{
+        font-size: 3.75rem;
+        padding-bottom: 30px;
+        color: $white;
+      }
+      a{
+        line-height: 1;
+        font-size: 1.5rem;
+        padding: 15px;
+        border-radius: 10px;
+        color: $white;
+        &:nth-of-type(1){
+          background-color: $primaryColor;
+          margin-right: 15px;
+        }
+        &:nth-of-type(2){
+          background-color: $secondaryColor;
+
+        }
+      }
     }
     .mobile-banner-content{
+      @media #{$tablet}{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
       p{
         padding: 10px;
         background-color: $secondaryColor;
@@ -50,6 +101,9 @@
 }
 
 .action-banner{
+  @media #{$tablet}{
+    display: none;
+  }
 padding: 10px;
 display: flex;
 flex-direction: row;
