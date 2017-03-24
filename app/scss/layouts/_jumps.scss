@@ -1,0 +1,27 @@
+.jumps-container{
+  padding: 20px;
+  justify-content: center;
+  align-self: center;
+  @media #{$mobile}{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 615px;
+    margin: 0 auto;
+    }
+  @media #{$desktop}{
+    max-width: 100%;
+    }
+  .jump{
+    background-color: $primaryColor;
+    color: $white;
+    max-width: 320px;
+    margin:10px;
+    img{
+      width: 100%;
+    }
+    p{
+      padding: 10px;
+    }
+  }
+}

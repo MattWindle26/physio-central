@@ -1,0 +1,34 @@
+
+*{
+  box-sizing: border-box;
+  font-family: $primaryFont;
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.icons{
+  width: 15px;
+  height: 15px;
+}
+.shadow{box-shadow: 0 2px 5px rgba(0,0,0,.26);}
+
+.inner-container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// main{
+//   max-width: 800px;
+//   background-color: pink;
+//   img{
+//     width: 100%;
+//   }
+// }

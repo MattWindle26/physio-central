@@ -1,0 +1,46 @@
+
+
+a{
+  text-decoration: none;
+  color: $secondaryColor;
+  transition: .3s ease-in-out all;
+  &:hover{
+    color: $primaryColor;
+    text-decoration: underline;
+  }
+}
+
+span{
+  color: $white;
+  font-size: 13px;
+}
+
+h1,h2,h3{
+  color: $secondaryColor;
+}
+h1{
+  font-size: 3rem;
+}
+
+h2{
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h4{
+}
+
+p{
+  font-size: 1.5rem;
+}
+
+strong{
+  color: $primaryColor;
+}
+a{
+  &:hover{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+// Colours
+$primaryColor : #F8911B;
+$secondaryColor : #497DB0;
+
+
+$white : #fff;
+$black : #000;
+$grey : #D3D3D3;
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+$primaryFont : 'PT Sans', sans-serif;
+
+
+// MEDIA QUERIES
+$mobile : '(min-width : 425px)';
+$large-mobile : '(min-width : 500px)';
+$tablet : '(min-width : 768px)';
+$laptop : '(min-width : 1024px)';
+$desktop : '(min-width : 1440px)';
